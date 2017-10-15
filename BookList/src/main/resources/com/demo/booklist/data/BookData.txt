@@ -1,0 +1,16 @@
+# Format: AUTHOR<tab>TITLE
+Stephen King	It
+Stephen King	Pet Sematary
+James Herbert	The Rats
+James Herbert	Lair
+James Herbert	Domain
+George R.R. Martin	A Game of Thrones
+George R.R. Martin	A Clash of Kings
+Dean Koontz	Twilight Eyes
+Dean Koontz	Cold Fire
+Fritz Leiber	Conjure Wife
+Richard Laymon	The Cellar
+Richard Laymon	After Midnight
+Gene Wolfe	The Book of the New Sun
+Michael Moorcock	Elric
+Dan Simmons	Song of Kali

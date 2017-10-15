@@ -1,0 +1,3 @@
+# Format: AUTHOR<tab>TITLE
+Robert	How to Offend
+Mary	Friendship for Dummies
