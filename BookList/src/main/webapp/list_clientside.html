@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="BookListApp">
+	<head>
+		<title>BookList Server-Filtering</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="resources/css/booklist.css"/>
+	</head>
+	<body>
+		<div class="page-div" ng-controller="BookListController">
+			<div class="top-section">
+				<span class="filter-label">
+					Filter:
+				</span>
+				<span class="filter-cell">
+					<input type="text" name="filter" ng-model="filterVal" />
+				</span>
+			</div>
+			<div class="list-section">
+				<table>
+					<thead>
+						<tr>
+							<th>Author</th>
+							<th>Title</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="book in bookList | filter : filterVal">
+							<td>{{book.author}}</td>
+							<td>{{book.title}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="resources/lib/angular/1.6.6/angular.min.js"></script>
+		<script type="text/javascript" src="resources/javascript/app.js"></script>
+		<script type="text/javascript" src="resources/javascript/util/CommonUtil.js"></script>
+		<script type="text/javascript" src="resources/javascript/services/BookListLoaderService.js"></script>
+		<script type="text/javascript" src="resources/javascript/controllers/BookListController.js"></script>
+	</body>
+</html>
