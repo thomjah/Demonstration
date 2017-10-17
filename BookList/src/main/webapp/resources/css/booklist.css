@@ -15,6 +15,10 @@
 	margin: 0 5px;
 }
 
+.filter-cell form {
+	display: inline;
+}
+
 .filter-button {
 	margin: 0 5px;
 }

@@ -4,25 +4,25 @@
 		<title>BookList Server-Filtering</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<link rel="stylesheet" href="resources/css/booklist.css"/>
 	</head>
 	<body>
 		<div class="page-div" ng-controller="BookListController">
 			<div class="top-section">
-				<form ng-submit="filterBtnClicked()">
-					<span class="filter-label">
-						Filter:
-					</span>
-					<span class="filter-cell">
+				<span class="filter-label">
+					Filter:
+				</span>
+				<span class="filter-cell">
+					<form ng-submit="filterBtnClicked()">
 						<input type="text" name="filter" ng-model="filterVal" />
-					</span>
-					<span class="filter-button">
-						<button ng-click="filterBtnClicked()">
-							Search
-						</button>
-					</span>
-				</form>
+					</form>
+				</span>
+				<span class="filter-button">
+					<button ng-click="filterBtnClicked()">
+						Search
+					</button>
+				</span>
 			</div>
 			<div class="list-section">
 				<table>
@@ -41,7 +41,7 @@
 				</table>
 			</div>
 		</div>
-		
+
 		<script type="text/javascript" src="resources/lib/angular/1.6.6/angular.min.js"></script>
 		<script type="text/javascript" src="resources/javascript/app.js"></script>
 		<script type="text/javascript" src="resources/javascript/util/CommonUtil.js"></script>
